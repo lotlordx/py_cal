@@ -74,12 +74,3 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(value, NUMBER_2, FAILURE)
         self.assertEqual(value, self.calc.last_answer, FAILURE)
 
-
-if __name__ == '__main__':
-    import xmlrunner
-
-    unittest.main(
-        testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
-        failfast=False,
-        buffer=False,
-        catchbreak=False)
